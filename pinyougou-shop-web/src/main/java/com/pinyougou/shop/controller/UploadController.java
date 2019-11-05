@@ -19,7 +19,7 @@ public class UploadController {
 	public Result uploadFile(MultipartFile file){
 		
 		try {
-			// 获得文件名:
+			/*// 获得文件名:
 			String fileName = file.getOriginalFilename();
 			// 获得文件的扩展名:
 			String extName = fileName.substring( fileName.lastIndexOf(".")+1 );
@@ -30,7 +30,8 @@ public class UploadController {
 			
 			String url = file_server_url + path;
 			
-			return new Result(true, url);
+			return new Result(true, url);*/
+			return null;
 		} catch (Exception e) {
 			e.printStackTrace();
 			return new Result(false, "上传失败！");
