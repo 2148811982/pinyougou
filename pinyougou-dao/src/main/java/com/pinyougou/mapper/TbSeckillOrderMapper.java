@@ -2,7 +2,9 @@ package com.pinyougou.mapper;
 
 import com.pinyougou.pojo.TbSeckillOrder;
 import com.pinyougou.pojo.TbSeckillOrderExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TbSeckillOrderMapper {

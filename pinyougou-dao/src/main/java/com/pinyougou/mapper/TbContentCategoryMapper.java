@@ -2,7 +2,9 @@ package com.pinyougou.mapper;
 
 import com.pinyougou.pojo.TbContentCategory;
 import com.pinyougou.pojo.TbContentCategoryExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TbContentCategoryMapper {

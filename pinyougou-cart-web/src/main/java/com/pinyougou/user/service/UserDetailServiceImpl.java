@@ -13,14 +13,14 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 public class UserDetailServiceImpl implements UserDetailsService {
 
-	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		System.out.println("经过认证类:"+username);
-		
-		List<GrantedAuthority> authorities=new ArrayList();
-		authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
-		
-		return new User(username,"",authorities);
-	}
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        System.out.println("经过认证类:" + username);
+
+        List<GrantedAuthority> authorities = new ArrayList();
+        authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
+
+        return new User(username, "", authorities);
+    }
 
 }

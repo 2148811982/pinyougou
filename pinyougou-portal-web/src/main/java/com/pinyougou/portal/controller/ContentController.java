@@ -13,11 +13,11 @@ import com.pinyougou.pojo.TbContent;
 @RequestMapping("/content")
 public class ContentController {
 
-	@Reference
-	private ContentService contentService;
-	
-	@RequestMapping("/findByCategoryId")
-	public List<TbContent> findByCategoryId(Long categoryId){
-		return contentService.findByCategoryId(categoryId);
-	}
+    @Reference
+    private ContentService contentService;
+
+    @RequestMapping("/findByCategoryId")
+    public List<TbContent> findByCategoryId(Long categoryId) {
+        return contentService.findByCategoryId(categoryId);
+    }
 }

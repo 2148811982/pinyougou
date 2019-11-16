@@ -11,14 +11,14 @@ import util.FastDFSClient;
 @RestController
 @RequestMapping("/upload")
 public class UploadController {
-	
-	@Value("${FILE_SERVER_URL}")
-	private String file_server_url;
-	
-	@RequestMapping("/uploadFile")
-	public Result uploadFile(MultipartFile file){
-		
-		try {
+
+    @Value("${FILE_SERVER_URL}")
+    private String file_server_url;
+
+    @RequestMapping("/uploadFile")
+    public Result uploadFile(MultipartFile file) {
+
+        try {
 			/*// 获得文件名:
 			String fileName = file.getOriginalFilename();
 			// 获得文件的扩展名:
@@ -31,12 +31,12 @@ public class UploadController {
 			String url = file_server_url + path;
 			
 			return new Result(true, url);*/
-			return null;
-		} catch (Exception e) {
-			e.printStackTrace();
-			return new Result(false, "上传失败！");
-		}
-		
-		
-	}
+            return null;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(false, "上传失败！");
+        }
+
+
+    }
 }

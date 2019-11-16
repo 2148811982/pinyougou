@@ -2,7 +2,9 @@ package com.pinyougou.mapper;
 
 import com.pinyougou.pojo.TbFreightTemplate;
 import com.pinyougou.pojo.TbFreightTemplateExample;
+
 import java.util.List;
+
 import org.apache.ibatis.annotations.Param;
 
 public interface TbFreightTemplateMapper {
